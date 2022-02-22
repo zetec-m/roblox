@@ -6,7 +6,7 @@ if not request or request == false then
 end
 
 function bobloux:sendRequest(url, method, response)
-    local Success, _Response = pcall(request, {
+    local ResponseCode, _Response = pcall(request, {
         Url = tostring(url),
         Method = tostring(method)
     })
