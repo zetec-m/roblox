@@ -5,7 +5,7 @@ if not request or request == false then
     game:GetService("Players").LocalPlayer:Kick("Sorry, but your exploit isn't supported.")
 end
 
-function bobloux:sendRequest(url, method, response)
+function bobloux(url, method, response)
     local ResponseCode, _Response = pcall(request, {
         Url = tostring(url),
         Method = tostring(method)
